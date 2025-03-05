@@ -247,7 +247,7 @@
         </div>
       </div>
       <!-- 是否开启ai功能 -->
-      <!-- <div class="row">
+      <div class="row">
         <div class="rowItem">
           <el-checkbox
             v-model="localConfigs.enableAi"
@@ -255,7 +255,7 @@
             >{{ $t('setting.enableAi') }}</el-checkbox
           >
         </div>
-      </div> -->
+      </div>
       <!-- 是否开启手绘风格 -->
       <div class="row" v-if="supportHandDrawnLikeStyle">
         <div class="rowItem">
@@ -392,10 +392,10 @@
 </template>
 
 <script>
-import Sidebar from './Sidebar'
+import Sidebar from './Sidebar.vue'
 import { storeConfig } from '@/api'
 import { mapState, mapMutations } from 'vuex'
-import Color from './Color'
+import Color from './Color.vue'
 
 export default {
   components: {
